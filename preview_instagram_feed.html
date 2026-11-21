@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulasi Grid 3x3 Instagram — Desain Rumah Kilat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-title { font-family: 'Syne', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 sm:p-10 selection:bg-amber-400 selection:text-slate-950">
+
+  <div class="max-w-5xl mx-auto space-y-8">
+    
+    <!-- Top Announcement -->
+    <div class="p-6 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-bold uppercase tracking-wider font-mono mb-2">
+          ⚡ 9 Postingan Feed Pertama (Starter Pack 3x3)
+        </div>
+        <h1 class="font-title text-2xl sm:text-3xl font-extrabold text-white">
+          Simulasi Feed Instagram @desainrumahkilat
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Urutan upload diatur terbalik: Upload dari <strong>Post 1</strong> dulu sampai <strong>Post 9</strong>, agar di feed IG membentuk susunan grid yang rapi seperti di bawah!
+        </p>
+      </div>
+      <a href="instagram_starter_pack/" target="_blank" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs uppercase tracking-wider transition-all whitespace-nowrap shadow-lg shadow-amber-500/20">
+        📁 Buka Folder File Pack
+      </a>
+    </div>
+
+    <!-- Phone Shell Simulator -->
+    <div class="max-w-md mx-auto bg-black rounded-[2.5rem] border-4 border-slate-800 shadow-2xl p-4 sm:p-6 space-y-6 overflow-hidden">
+      
+      <!-- Instagram Header -->
+      <div class="flex items-center justify-between border-b border-slate-900 pb-4">
+        <span class="font-bold text-sm tracking-tight text-white flex items-center gap-1.5 font-mono">
+          <span>desainrumahkilat</span>
+          <span class="text-blue-400 text-xs">✓</span>
+        </span>
+        <div class="flex items-center gap-4 text-slate-400 text-lg">
+          <span>🔔</span>
+          <span>⋮</span>
+        </div>
+      </div>
+
+      <!-- Profile Header & Stats -->
+      <div class="flex items-center justify-between gap-4">
+        <!-- Avatar with Story Gradient -->
+        <div class="relative w-20 h-20 rounded-full p-0.5 bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 shrink-0">
+          <div class="w-full h-full rounded-full overflow-hidden border-2 border-black bg-slate-950">
+            <img src="images/logo_drk_instagram_avatar_fit.jpg" alt="Avatar" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="flex-1 flex justify-around text-center">
+          <div>
+            <div class="font-bold text-sm text-white">9</div>
+            <div class="text-[11px] text-slate-400">Postingan</div>
+          </div>
+          <div>
+            <div class="font-bold text-sm text-white">1.2K</div>
+            <div class="text-[11px] text-slate-400">Pengikut</div>
+          </div>
+          <div>
+            <div class="font-bold text-sm text-white">4</div>
+            <div class="text-[11px] text-slate-400">Mengikuti</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="text-xs space-y-1 text-slate-200 leading-relaxed">
+        <div class="font-bold text-white">Desain Rumah Kilat ⚡ Denah 24 Jam</div>
+        <div class="text-slate-400 text-[11px]">Layanan Desain Arsitektur</div>
+        <div>⚡ Jasa Gambar Denah Rumah Cepat (24 Jam Jadi)</div>
+        <div>📐 Denah 2D Siap Tukang + Free 1x Revisi Sekat</div>
+        <div>💰 Paket Mulai Rp 199.000 (Hemat jutaan rupiah)</div>
+        <div class="pt-1">
+          <a href="https://desainrumahkilat-drk.github.io/web/" target="_blank" class="text-amber-400 hover:underline font-mono text-[11px] font-bold">
+            🔗 desainrumahkilat-drk.github.io/web
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Action Buttons -->
+      <div class="flex gap-2">
+        <button class="flex-1 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider">
+          Kirim Pesan (DM)
+        </button>
+        <button class="flex-1 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-white font-bold text-xs">
+          WhatsApp Order
+        </button>
+      </div>
+
+      <!-- Story Highlights Mockup -->
+      <div class="flex gap-4 overflow-x-auto pb-2 border-b border-slate-900 scrollbar-none">
+        <div class="flex flex-col items-center gap-1 shrink-0">
+          <div class="w-14 h-14 rounded-full bg-slate-900 border border-amber-500/50 flex items-center justify-center text-lg">
+            ⚡
+          </div>
+          <span class="text-[10px] text-slate-400">Tarif Paket</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 shrink-0">
+          <div class="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-lg">
+            📐
+          </div>
+          <span class="text-[10px] text-slate-400">Contoh 2D</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 shrink-0">
+          <div class="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-lg">
+            🏠
+          </div>
+          <span class="text-[10px] text-slate-400">Hasil 3D</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 shrink-0">
+          <div class="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-lg">
+            ⏱️
+          </div>
+          <span class="text-[10px] text-slate-400">Cara Order</span>
+        </div>
+      </div>
+
+      <!-- Feed Grid Tabs -->
+      <div class="flex justify-around text-slate-400 text-xs border-b border-slate-900 pb-2">
+        <span class="text-amber-400 border-b-2 border-amber-400 pb-2 font-bold flex items-center gap-1">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M3 3h7v7H3zm11 0h7v7h-7zm0 11h7v7h-7zm-11 0h7v7H3z"/></svg>
+          <span>GRID FEED</span>
+        </span>
+        <span class="flex items-center gap-1">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          <span>REELS</span>
+        </span>
+      </div>
+
+      <!-- THE 3x3 FEED GRID (Displaying in Visual Order) -->
+      <!-- Visual Display Order: Post 9, Post 8, Post 7 (Top Row) / Post 6, Post 5, Post 4 (Middle Row) / Post 3, Post 2, Post 1 (Bottom Row) -->
+      <div class="grid grid-cols-3 gap-1">
+        
+        <!-- ROW 1 (TOP) -->
+        <!-- Post 9 (Pin Post) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(9)">
+          <img src="instagram_starter_pack/POST_09_GARANSI_24JAM_PIN/slide_09_garansi_resmi.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-amber-500 text-slate-950 font-extrabold text-[9px] shadow font-mono">📌 PIN</span>
+        </div>
+
+        <!-- Post 8 (Proyek 3) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(8)">
+          <img src="instagram_starter_pack/POST_08_PROYEK3_2LANTAI_6x15/slide_01_fasad_2lantai.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute top-1 right-1 text-white text-[10px] drop-shadow">📑 3 Slide</span>
+        </div>
+
+        <!-- Post 7 (Edukasi Fatal) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(7)">
+          <img src="instagram_starter_pack/POST_07_EDUKASI_BAHAYA_TANPA_DENAH/slide_07_kesalahan_fatal.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute bottom-1 right-1 bg-red-600 text-white font-bold text-[8px] px-1 rounded">WARNING</span>
+        </div>
+
+        <!-- ROW 2 (MIDDLE) -->
+        <!-- Post 6 (Proyek 2 Mezzanine) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(6)">
+          <img src="instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/slide_01_fasad_mezzanine.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute top-1 right-1 text-white text-[10px] drop-shadow">📑 4 Slide</span>
+        </div>
+
+        <!-- Post 5 (X-Ray Transformasi) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(5)">
+          <img src="instagram_starter_pack/POST_05_XRAY_TRANSFORMASI/slide_05_xray_transformasi.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute bottom-1 right-1 bg-amber-500 text-slate-950 font-bold text-[8px] px-1 rounded">X-RAY</span>
+        </div>
+
+        <!-- Post 4 (Proyek 1 Kompak 6x12) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(4)">
+          <img src="instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/slide_01_fasad.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute top-1 right-1 text-white text-[10px] drop-shadow">📑 4 Slide</span>
+        </div>
+
+        <!-- ROW 3 (BOTTOM - Uploaded First) -->
+        <!-- Post 3 (Cara Order) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(3)">
+          <img src="instagram_starter_pack/POST_03_CARA_ORDER_PRAKTIS/slide_03_cara_order.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute bottom-1 left-1 bg-slate-950/80 text-white text-[8px] px-1 rounded font-mono">1-2-3</span>
+        </div>
+
+        <!-- Post 2 (Daftar Harga) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(2)">
+          <img src="instagram_starter_pack/POST_02_DAFTAR_HARGA_TRANSPARAN/slide_02_daftar_harga.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute bottom-1 right-1 bg-emerald-600 text-white font-bold text-[8px] px-1 rounded">HARGA</span>
+        </div>
+
+        <!-- Post 1 (Intro Launching) -->
+        <div class="aspect-square bg-slate-900 relative group cursor-pointer overflow-hidden border border-slate-800" onclick="showModal(1)">
+          <img src="instagram_starter_pack/POST_01_LAUNCHING_KENAPA_KAMI/slide_01_launching.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+          <span class="absolute top-1 left-1 bg-amber-500 text-slate-950 font-bold text-[8px] px-1 rounded">START</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Instruction Stepper Box -->
+    <div class="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="text-amber-400 font-bold text-lg">📋</span>
+        <h2 class="font-title text-base font-bold text-white">Panduan Urutan Upload ke Instagram:</h2>
+      </div>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        Karena postingan baru di Instagram selalu muncul di posisi paling kiri-atas, <strong>urutannya wajib diupload dari POST 1 dulu sampai POST 9</strong>:
+      </p>
+      <div class="grid sm:grid-cols-3 gap-3 text-xs font-mono">
+        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+          <span class="text-amber-400 font-bold block mb-1">Tahap 1 (Baris Bawah):</span>
+          <span>1. Post 1: Intro Launching</span><br>
+          <span>2. Post 2: Daftar Harga</span><br>
+          <span>3. Post 3: Cara Order</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+          <span class="text-amber-400 font-bold block mb-1">Tahap 2 (Baris Tengah):</span>
+          <span>4. Post 4: Proyek 1 (6x12)</span><br>
+          <span>5. Post 5: X-Ray Transformasi</span><br>
+          <span>6. Post 6: Proyek 2 (Mezzanine)</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+          <span class="text-amber-400 font-bold block mb-1">Tahap 3 (Baris Atas):</span>
+          <span>7. Post 7: Bahaya Tanpa Denah</span><br>
+          <span>8. Post 8: Proyek 3 (2 Lantai)</span><br>
+          <span>9. Post 9: Garansi & Pin Post</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Viewer -->
+  <div id="postModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-2xl w-full p-6 space-y-4 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 id="modalTitle" class="font-title text-lg font-bold text-amber-400">Judul Post</h3>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-white text-xl font-bold">✕</button>
+      </div>
+      
+      <div id="modalImages" class="space-y-3"></div>
+
+      <div class="space-y-2 pt-2 border-t border-slate-800">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-400 uppercase font-mono">Naskah Caption Instagram:</span>
+          <button id="copyBtn" onclick="copyCaption()" class="px-3 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs font-mono transition-colors">
+            📋 Salin Caption
+          </button>
+        </div>
+        <textarea id="modalCaption" readonly class="w-full h-44 p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono resize-none focus:outline-none"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const postsData = {
+      1: {
+        title: "POST 1: Launching & Kenapa Harus Desain Rumah Kilat?",
+        images: ["instagram_starter_pack/POST_01_LAUNCHING_KENAPA_KAMI/slide_01_launching.jpg"],
+        captionPath: "instagram_starter_pack/POST_01_LAUNCHING_KENAPA_KAMI/CAPTION.txt"
+      },
+      2: {
+        title: "POST 2: Daftar Harga Resmi & Transparan",
+        images: ["instagram_starter_pack/POST_02_DAFTAR_HARGA_TRANSPARAN/slide_02_daftar_harga.jpg"],
+        captionPath: "instagram_starter_pack/POST_02_DAFTAR_HARGA_TRANSPARAN/CAPTION.txt"
+      },
+      3: {
+        title: "POST 3: Cara Order Praktis 3 Langkah",
+        images: ["instagram_starter_pack/POST_03_CARA_ORDER_PRAKTIS/slide_03_cara_order.jpg"],
+        captionPath: "instagram_starter_pack/POST_03_CARA_ORDER_PRAKTIS/CAPTION.txt"
+      },
+      4: {
+        title: "POST 4: Carousel Proyek 1 — Rumah Kompak 6x12m (3 Kamar)",
+        images: [
+          "instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/slide_01_fasad.jpg",
+          "instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/slide_02_denah_2d_siap_tukang.jpg",
+          "instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/slide_03_denah_3d_cutaway.jpg",
+          "instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/slide_04_interior_lapang.jpg"
+        ],
+        captionPath: "instagram_starter_pack/POST_04_PROYEK1_KOMPAK_6x12/CAPTION.txt"
+      },
+      5: {
+        title: "POST 5: Transformasi X-Ray Denah 2D ke Fasad 3D",
+        images: ["instagram_starter_pack/POST_05_XRAY_TRANSFORMASI/slide_05_xray_transformasi.jpg"],
+        captionPath: "instagram_starter_pack/POST_05_XRAY_TRANSFORMASI/CAPTION.txt"
+      },
+      6: {
+        title: "POST 6: Carousel Proyek 2 — Mezzanine Plafon 5m (7x9m)",
+        images: [
+          "instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/slide_01_fasad_mezzanine.jpg",
+          "instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/slide_02_potongan_3d_plafon5m.jpg",
+          "instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/slide_03_interior_void_tangga.jpg",
+          "instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/slide_04_denah_3d_cutaway.jpg"
+        ],
+        captionPath: "instagram_starter_pack/POST_06_PROYEK2_MEZZANINE_7x9/CAPTION.txt"
+      },
+      7: {
+        title: "POST 7: 5 Kesalahan Fatal Bangun Rumah Tanpa Denah",
+        images: ["instagram_starter_pack/POST_07_EDUKASI_BAHAYA_TANPA_DENAH/slide_07_kesalahan_fatal.jpg"],
+        captionPath: "instagram_starter_pack/POST_07_EDUKASI_BAHAYA_TANPA_DENAH/CAPTION.txt"
+      },
+      8: {
+        title: "POST 8: Carousel Proyek 3 — Modern 2 Lantai 6x15m (Keluarga Besar)",
+        images: [
+          "instagram_starter_pack/POST_08_PROYEK3_2LANTAI_6x15/slide_01_fasad_2lantai.jpg",
+          "instagram_starter_pack/POST_08_PROYEK3_2LANTAI_6x15/slide_02_denah_3d_exploded.jpg",
+          "instagram_starter_pack/POST_08_PROYEK3_2LANTAI_6x15/slide_03_interior_dapur_makan.jpg"
+        ],
+        captionPath: "instagram_starter_pack/POST_08_PROYEK3_2LANTAI_6x15/CAPTION.txt"
+      },
+      9: {
+        title: "POST 9: Garansi 24 Jam Pasti Selesai + Free 1x Revisi (PIN POST)",
+        images: ["instagram_starter_pack/POST_09_GARANSI_24JAM_PIN/slide_09_garansi_resmi.jpg"],
+        captionPath: "instagram_starter_pack/POST_09_GARANSI_24JAM_PIN/CAPTION.txt"
+      }
+    };
+
+    async function showModal(postId) {
+      const data = postsData[postId];
+      if (!data) return;
+
+      document.getElementById('modalTitle').innerText = data.title;
+      
+      const imgContainer = document.getElementById('modalImages');
+      imgContainer.innerHTML = '';
+      data.images.forEach((imgSrc, idx) => {
+        const div = document.createElement('div');
+        div.className = "rounded-xl overflow-hidden border border-slate-800 bg-slate-950";
+        div.innerHTML = `
+          <div class="p-2 text-[11px] font-mono text-slate-400 border-b border-slate-800 flex justify-between">
+            <span>Slide ${idx + 1} of ${data.images.length}</span>
+            <a href="${imgSrc}" download class="text-amber-400 hover:underline">Download Slide</a>
+          </div>
+          <img src="${imgSrc}" class="w-full max-h-72 object-contain">
+        `;
+        imgContainer.appendChild(div);
+      });
+
+      // Fetch caption
+      try {
+        const res = await fetch(data.captionPath);
+        const text = await res.text();
+        document.getElementById('modalCaption').value = text;
+      } catch (e) {
+        document.getElementById('modalCaption').value = "Caption file: " + data.captionPath;
+      }
+
+      document.getElementById('postModal').classList.remove('hidden');
+      document.getElementById('postModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('postModal').classList.add('hidden');
+      document.getElementById('postModal').classList.remove('flex');
+    }
+
+    function copyCaption() {
+      const copyText = document.getElementById('modalCaption');
+      copyText.select();
+      navigator.clipboard.writeText(copyText.value);
+      const btn = document.getElementById('copyBtn');
+      btn.innerText = "✓ Tersalin!";
+      setTimeout(() => { btn.innerText = "📋 Salin Caption"; }, 2000);
+    }
+  </script>
+
+</body>
+</html>
