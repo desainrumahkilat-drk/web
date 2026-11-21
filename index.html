@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desain Rumah Kilat ⚡ — Jasa Buat Denah Rumah Cepat 24 Jam Rp 199.000</title>
-  <meta name="description" content="Jasa pembuatan denah rumah 2D presisi selesai dalam 24 jam mulai Rp 199.000. Tanpa ribet, hemat biaya, siap langsung diserahkan ke tukang!">
+  <meta name="description" content="Jasa pembuatan denah rumah 2D presisi selesai dalam 24 jam mulai Rp 199.000. Cukup kirim ukuran tanah via WhatsApp, siap langsung diserahkan ke tukang!">
   
-  <!-- OpenGraph / Social Media Cards (WhatsApp, Instagram, Facebook, TikTok) -->
+  <!-- OpenGraph / Social Media Cards -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://solusarsitekstudio-hue.github.io/desain-rumah-kilat/">
   <meta property="og:site_name" content="Desain Rumah Kilat">
@@ -15,7 +15,6 @@
   <meta property="og:image" content="images/highlight_split_level_4k.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Desain Rumah Kilat 24 Jam">
   <meta property="og:locale" content="id_ID">
 
   <!-- Twitter Card -->
@@ -27,10 +26,10 @@
   <!-- Favicon SVG (Lightning Monogram '⚡') -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ffffff'/><rect x='4' y='4' width='92' height='92' rx='18' fill='none' stroke='%23f59e0b' stroke-width='4'/><text x='50' y='68' font-size='48' font-family='sans-serif' font-weight='900' fill='%23f59e0b' text-anchor='middle'>⚡</text></svg>">
   
-  <!-- Google Fonts: Syne, Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Plus Jakarta Sans, Syne & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -79,51 +78,38 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #f59e0b;
     }
-    
-    /* Native dialog backdrop styling */
-    dialog::backdrop {
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
 
-    /* Architectural Clean Subtle Grid Background (Light Mode) */
-    .arch-grid {
+    /* Subtle Technical Millimeter Grid */
+    .blueprint-grid {
       background-image: 
-        linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
-      background-size: 36px 36px;
+        linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+      background-size: 28px 28px;
     }
 
-    /* Clean Modern Light Card Style */
-    .light-card {
+    /* Modern Clean Box Shadow */
+    .clean-box {
       background: #ffffff;
       border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.04), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .light-card:hover {
-      border-color: #f59e0b;
-      box-shadow: 0 12px 24px -6px rgba(245, 158, 11, 0.15), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
+    .clean-box:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.08);
     }
 
-    /* ================= X-FACTOR INTERACTIVE BEFORE/AFTER SLIDER ================= */
+    /* Interactive Comparison Slider */
     .comparison-container {
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 10;
-      max-height: 560px;
       overflow: hidden;
-      border-radius: 1.25rem;
+      border-radius: 1rem;
       user-select: none;
       -webkit-user-select: none;
       touch-action: pan-y;
-      background: #f1f5f9;
-    }
-    @media (min-width: 768px) {
-      .comparison-container {
-        aspect-ratio: 16 / 9;
-      }
+      background: #f8fafc;
     }
     .comparison-before,
     .comparison-after {
@@ -161,8 +147,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 44px;
-      height: 44px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       background: #ffffff;
       border: 2px solid #f59e0b;
@@ -171,248 +157,706 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2), 0 0 10px rgba(245, 158, 11, 0.5);
-      font-size: 16px;
+      font-size: 15px;
       pointer-events: auto;
       cursor: ew-resize;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      transition: transform 0.15s ease;
     }
     .comparison-handle-knob:hover {
       transform: translate(-50%, -50%) scale(1.1);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 16px rgba(245, 158, 11, 0.7);
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-400 selection:text-slate-950 min-h-screen relative overflow-x-hidden">
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-amber-400 selection:text-slate-950 min-h-screen relative overflow-x-hidden">
 
-  <!-- ================= TOP NOTIFICATION BAR ================= -->
-  <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 hidden md:block">
-    <div class="max-w-7xl mx-auto flex items-center justify-between text-slate-300">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 bg-amber-500/20 text-amber-400 px-2.5 py-0.5 rounded-full border border-amber-500/40 text-[10px] font-bold uppercase tracking-wider">
-          <span>⚡</span>
-          <span>PROMO SPESIAL KILAT</span>
+  <!-- ================= TOP SERVICE BAR ================= -->
+  <aside aria-label="Status Layanan" class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-300">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>ADMIN STANDBY 24 JAM</span>
         </span>
-        <span class="text-slate-300 font-medium">
-          Jasa Gambar Denah Rumah Cepat 24 Jam Selesai • Mulai <strong class="text-amber-400 font-bold font-mono">Rp 199.000</strong> Saja!
+        <span class="text-xs text-slate-300 font-medium">
+          Order Sekarang, Draft Denah Pertama Selesai Besok!
         </span>
       </div>
-      <div class="flex items-center gap-4 text-xs font-medium">
+      <div class="flex items-center gap-4 text-xs">
         <a href="https://www.instagram.com/desainrumahkilat/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-slate-300">
           <svg class="w-3.5 h-3.5 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          <span>Instagram @desainrumahkilat</span>
+          <span>@desainrumahkilat</span>
         </a>
-        <span class="text-slate-600">•</span>
+        <span class="text-slate-600">|</span>
         <a href="https://wa.me/6281267447101" target="_blank" rel="noopener noreferrer" class="text-amber-400 font-bold hover:underline">
-          WhatsApp: 0812-6744-7101
+          WA: 0812-6744-7101
         </a>
       </div>
     </div>
-  </div>
+  </aside>
 
-  <!-- ================= NAVBAR ================= -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <!-- ================= MINIMALIST STICKY HEADER ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-3.5 flex items-center justify-between">
       
-      <!-- Brand Logo -->
-      <a href="#" class="flex items-center gap-3.5 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-500 flex items-center justify-center font-title font-bold text-slate-950 text-2xl shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform border border-amber-300">
+      <!-- Logo Monogram -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-400 flex items-center justify-center font-bold text-slate-950 text-xl shadow-sm border border-amber-300">
           ⚡
         </div>
         <div>
-          <span class="font-title text-xl font-extrabold tracking-tight text-slate-950 block group-hover:text-amber-600 transition-colors">
+          <span class="font-title text-xl font-extrabold tracking-tight text-slate-950 block leading-tight">
             DESAIN RUMAH KILAT
           </span>
-          <span class="text-[10px] tracking-widest uppercase text-amber-600 font-bold block -mt-1 font-mono">
-            Denah 2D Presisi Selesai 24 Jam
+          <span class="text-[10px] tracking-widest uppercase text-amber-600 font-bold block font-mono">
+            Fast-Track 24H Floorplan
           </span>
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-slate-600">
-        <a href="#paket" class="hover:text-amber-600 transition-colors text-amber-600 flex items-center gap-1.5">
-          <span>Paket Biaya</span>
-          <span class="text-[9px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded border border-amber-300 font-bold">Promo</span>
-        </a>
-        <a href="#cara-pesan" class="hover:text-amber-600 transition-colors">Cara Pesan</a>
-        <a href="#transformasi" class="hover:text-amber-600 transition-colors">Simulasi Denah</a>
-        <a href="#galeri" class="hover:text-amber-600 transition-colors">Contoh Desain</a>
-        <a href="#faq" class="hover:text-amber-600 transition-colors">Tanya Jawab</a>
+      <!-- Quick Fast Action Links -->
+      <nav class="hidden md:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-600">
+        <a href="#kalkulator-cepat" class="text-amber-600 hover:text-amber-700 transition-colors">Order Cepat</a>
+        <a href="#perbandingan" class="hover:text-slate-950 transition-colors">Kenapa Kami?</a>
+        <a href="#paket-lengkap" class="hover:text-slate-950 transition-colors">Pilihan Paket</a>
+        <a href="#bento-karya" class="hover:text-slate-950 transition-colors">Contoh Gambar</a>
+        <a href="#faq" class="hover:text-slate-950 transition-colors">Tanya Jawab</a>
       </nav>
 
-      <!-- Right Header CTA -->
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20jasa%20gambar%20denah%2024%20jam." 
+      <!-- Header Direct CTA -->
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Denah%20Kilat%2024%20Jam." 
            target="_blank" 
-           rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 px-5 py-2.5 rounded-xl text-xs font-extrabold uppercase tracking-wider shadow-md shadow-amber-500/20 transition-all hover:-translate-y-0.5">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl text-xs font-extrabold uppercase tracking-wider shadow-sm transition-all hover:scale-105">
+          <svg class="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
           <span>Pesan via WA</span>
         </a>
       </div>
-
-      <!-- Mobile Menu Toggle Button -->
-      <button id="mobileMenuBtn" aria-label="Buka Menu" class="lg:hidden p-2 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 hover:text-slate-950">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile Nav Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 py-6 space-y-3 shadow-lg">
-      <a href="#paket" class="block py-2 text-amber-600 font-bold text-sm">Paket Biaya (Mulai Rp 199.000)</a>
-      <a href="#cara-pesan" class="block py-2 text-slate-700 hover:text-amber-600 font-medium text-sm">Cara Pesan 3 Langkah</a>
-      <a href="#transformasi" class="block py-2 text-slate-700 hover:text-amber-600 font-medium text-sm">Simulasi Denah 2D vs 3D</a>
-      <a href="#galeri" class="block py-2 text-slate-700 hover:text-amber-600 font-medium text-sm">Contoh Desain</a>
-      <a href="#faq" class="block py-2 text-slate-700 hover:text-amber-600 font-medium text-sm">Tanya Jawab</a>
-      <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20jasa%20gambar%20denah%2024%20jam." 
-         class="block text-center bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 py-3.5 rounded-xl font-extrabold uppercase tracking-wider text-xs shadow-md">
-        Pesan Denah Kilat via WhatsApp (0812-6744-7101)
-      </a>
     </div>
   </header>
 
-  <!-- ================= HERO SALES SECTION ================= -->
-  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-slate-50 to-slate-100/60 arch-grid">
-    <!-- Ambient Warm Lighting Atmosphere -->
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-amber-400/10 blur-[150px] pointer-events-none rounded-full"></div>
-    <div class="absolute top-1/4 right-5 w-[400px] h-[400px] bg-yellow-400/10 blur-[130px] pointer-events-none rounded-full"></div>
+  <!-- ================= RADICAL NEW HERO LAYOUT: CENTERED DIRECT ACTION ENGINE ================= -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden blueprint-grid border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6 relative z-10">
+      
+      <!-- Top Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider shadow-sm">
+        <span>⚡ Solusi Gambar Denah Termurah & Tercepat Se-Indonesia</span>
+      </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
-        <!-- Text Hero Content -->
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+      <!-- Main Headline -->
+      <h1 class="font-title text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-950 leading-[1.12] tracking-tight max-w-4xl mx-auto">
+        Mau Bangun Rumah Tapi Bingung Bagi Ruangan? <span class="text-amber-600 underline decoration-amber-300 decoration-wavy decoration-2">Denah 24 Jam Selesai</span>, Cuma Rp 199.000!
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Gak perlu bayar arsitek jutaan rupiah hanya untuk bikin denah. Cukup kirim ukuran tanah Anda di WhatsApp, denah 2D rapi dengan ukuran dinding meteran presisi langsung siap serahkan ke tukang!
+      </p>
+
+      <!-- ================= INTERACTIVE ORDER MATRIX (DIRECT CONVERSION TOOL) ================= -->
+      <div id="kalkulator-cepat" class="pt-6 max-w-3xl mx-auto text-left">
+        <div class="clean-box rounded-3xl p-6 sm:p-8 bg-white border-2 border-slate-200 shadow-xl">
           
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs font-bold tracking-wider uppercase shadow-sm">
-            <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
-            <span>⚡ Jasa Buat Denah Cepat • Selesai dalam 24 Jam</span>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-slate-200 gap-2">
+            <div>
+              <span class="text-[11px] font-extrabold text-amber-600 uppercase tracking-widest block">Langkah 1: Pilih Kebutuhan Rumah Anda</span>
+              <h2 class="font-title text-lg font-bold text-slate-950">Pilih Paket Bangunan yang Ingin Dibuat:</h2>
+            </div>
+            <span class="text-xs font-mono font-bold bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 self-start sm:self-auto">
+              ⚡ Garansi 24 Jam Jadi
+            </span>
           </div>
 
-          <h1 class="font-title text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.12] text-slate-950 tracking-tight">
-            Bikin Denah Rumah Impian Selesai 24 Jam, Cuma <span class="bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 bg-clip-text text-transparent">Rp 199.000</span>!
-          </h1>
+          <!-- 3 Package Selector Tabs -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-5" id="packageButtons">
+            
+            <!-- Tab 1: 1 Lantai (Active by default) -->
+            <button type="button" 
+                    onclick="selectPackage(1, 'Denah Kilat 1 Lantai', 'Rp 199.000', '24 Jam Selesai', 'https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2001:%20Denah%201%20Lantai%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:...')"
+                    id="btn-pkg-1"
+                    class="p-4 rounded-2xl border-2 border-amber-500 bg-amber-50/60 text-left transition-all relative overflow-hidden group">
+              <span class="absolute top-2 right-2 text-[9px] bg-amber-500 text-slate-950 font-extrabold px-2 py-0.5 rounded-full">BEST SELLER</span>
+              <span class="text-xs font-bold text-amber-800 uppercase block tracking-wider">Paket 01</span>
+              <span class="font-title text-base font-bold text-slate-950 block mt-1">1 Lantai</span>
+              <span class="font-mono text-lg font-extrabold text-amber-600 block mt-1">Rp 199.000</span>
+              <span class="text-[11px] text-slate-500 block mt-0.5">Rumah tinggal / kavling kompak</span>
+            </button>
 
-          <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-            Punya tanah mau dibangun tapi bingung bagi ruangannya? <strong class="text-slate-900">Nggak perlu bayar arsitek jutaan rupiah!</strong> Cukup kirim ukuran tanah Anda di WhatsApp, denah tata ruang 2D presisi siap serahkan ke tukang selesai dalam 24 jam. Tanpa ribet, langsung gas bangun!
+            <!-- Tab 2: 2 Lantai -->
+            <button type="button" 
+                    onclick="selectPackage(2, 'Denah Kilat 2 Lantai / Mezzanine', 'Rp 299.000', '24 Jam Selesai', 'https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2002:%20Denah%202%20Lantai%20(Rp%20299.000).%20Ini%20ukuran%20tanah%20saya:...')"
+                    id="btn-pkg-2"
+                    class="p-4 rounded-2xl border-2 border-slate-200 bg-white hover:border-slate-300 text-left transition-all relative overflow-hidden group">
+              <span class="text-xs font-bold text-slate-500 uppercase block tracking-wider">Paket 02</span>
+              <span class="font-title text-base font-bold text-slate-950 block mt-1">2 Lantai / Mezzanine</span>
+              <span class="font-mono text-lg font-extrabold text-slate-900 block mt-1">Rp 299.000</span>
+              <span class="text-[11px] text-slate-500 block mt-0.5">Tata letak tangga & void</span>
+            </button>
+
+            <!-- Tab 3: Denah + 3D -->
+            <button type="button" 
+                    onclick="selectPackage(3, 'Denah 2D + 3D Render Fasad', 'Rp 399.000', '24–48 Jam Selesai', 'https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2003:%20Denah%20%2B%203D%20Fasad%20(Rp%20399.000).%20Ini%20ukuran%20tanah%20saya:...')"
+                    id="btn-pkg-3"
+                    class="p-4 rounded-2xl border-2 border-slate-200 bg-white hover:border-slate-300 text-left transition-all relative overflow-hidden group">
+              <span class="text-xs font-bold text-slate-500 uppercase block tracking-wider">Paket 03</span>
+              <span class="font-title text-base font-bold text-slate-950 block mt-1">Denah + 3D Fasad</span>
+              <span class="font-mono text-lg font-extrabold text-slate-900 block mt-1">Rp 399.000</span>
+              <span class="text-[11px] text-slate-500 block mt-0.5">Denah + 1 View 3D Tampak</span>
+            </button>
+
+          </div>
+
+          <!-- Dynamic Output Card with Live WhatsApp Link -->
+          <div class="mt-6 p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs uppercase font-extrabold text-amber-700" id="selectedPkgTitle">Denah Kilat 1 Lantai</span>
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded border border-emerald-300" id="selectedPkgTime">⚡ 24 Jam Selesai</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-1" id="selectedPkgDesc">
+                Termasuk: Denah 2D berdimensi meteran presisi + Free 1x revisi sekat + Softcopy PDF & JPG HD siap print A4/A3.
+              </p>
+            </div>
+
+            <div class="w-full md:w-auto flex items-center justify-between md:justify-end gap-4 border-t md:border-t-0 pt-3 md:pt-0 border-slate-200">
+              <div class="text-right">
+                <span class="text-[10px] text-slate-400 block font-medium">Total Tarif:</span>
+                <span class="font-mono font-extrabold text-2xl text-slate-950 block" id="selectedPkgPrice">Rp 199.000</span>
+              </div>
+              <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2001:%20Denah%201%20Lantai%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:..." 
+                 id="btnDirectWa"
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 px-6 py-3.5 rounded-xl font-extrabold text-xs uppercase tracking-wider shadow-md hover:scale-105 transition-all whitespace-nowrap">
+                <span>Kirim Ukuran via WA</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-slate-500 mt-3 text-center sm:text-left flex items-center gap-1.5 justify-center sm:justify-start">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            <span>Tanpa biaya tambahan tersembunyi. Pembayaran mudah via Transfer Bank & QRIS.</span>
           </p>
 
-          <!-- Buttons Group CTA -->
-          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
-            <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Denah%20Kilat%2024%20Jam%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:..." 
-               target="_blank"
-               rel="noopener noreferrer"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 px-8 py-4 rounded-xl font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all hover:-translate-y-0.5">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-              </svg>
-              <span>Pesan Denah Kilat Sekarang (WA)</span>
-            </a>
-            
-            <a href="#paket" 
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-slate-300 px-6 py-4 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-sm">
-              <span>Lihat Pilihan Paket</span>
-              <span class="text-amber-600">⚡</span>
-            </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: HEAD-TO-HEAD COMPARISON (KENAPA BEDA DARI ARSITEK BIASA?) ================= -->
+  <section id="perbandingan" class="py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Perbandingan Jujur</span>
+        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
+          Kenapa Harus ke Desain Rumah Kilat?
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Lihat bedanya solusi cepat kami dibanding jasa perancangan arsitek konvensional:
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 items-stretch">
+        
+        <!-- Sisi Kiri: Arsitek Konvensional (Muted / Problem) -->
+        <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 space-y-5 text-left">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+            <span class="text-xs uppercase font-extrabold text-rose-600 tracking-wider">Jasa Arsitek Konvensional</span>
+            <span class="text-lg">❌</span>
           </div>
 
-          <!-- 4 Trust Badges Kilat -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-200">
-            <div class="p-3.5 rounded-xl light-card text-left">
-              <span class="text-amber-600 font-mono text-lg font-bold block">⚡ 24 Jam</span>
-              <span class="text-[11px] text-slate-600 font-medium block">Pasti Jadi & Cepat</span>
+          <ul class="space-y-4 text-xs sm:text-sm text-slate-600">
+            <li class="flex items-start gap-3">
+              <span class="text-rose-500 font-bold text-base">✕</span>
+              <div>
+                <strong class="text-slate-900 block font-semibold">Biaya Sangat Mahal:</strong>
+                <span>Tarif jasa mulai Rp 3 Juta s/d Rp 10 Juta (terlalu boros jika cuma butuh pembagian denah).</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-rose-500 font-bold text-base">✕</span>
+              <div>
+                <strong class="text-slate-900 block font-semibold">Waktu Lama (2 - 4 Minggu):</strong>
+                <span>Proses gambar berminggu-minggu, tukang bangunan harus menunggu lama untuk mulai.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-rose-500 font-bold text-base">✕</span>
+              <div>
+                <strong class="text-slate-900 block font-semibold">Alur Ribet & Berbelit-belit:</strong>
+                <span>Harus isi brief panjang, presentasi formal, dan istilah teknis yang bikin pusing pemilik rumah.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sisi Kanan: Desain Rumah Kilat (Vibrant / Solution) -->
+        <div class="p-7 rounded-3xl bg-amber-50/50 border-2 border-amber-500 shadow-lg space-y-5 text-left relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 font-extrabold text-[10px] px-3.5 py-1 rounded-bl-xl uppercase tracking-wider">
+            Solusi Praktis Siap Bangun
+          </div>
+
+          <div class="flex items-center justify-between pb-3 border-b border-amber-200">
+            <span class="text-xs uppercase font-extrabold text-amber-800 tracking-wider">⚡ Desain Rumah Kilat</span>
+            <span class="text-lg">✅</span>
+          </div>
+
+          <ul class="space-y-4 text-xs sm:text-sm text-slate-700">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 font-bold text-base">✔</span>
+              <div>
+                <strong class="text-slate-950 block font-semibold">Super Hemat (Cuma Rp 199.000):</strong>
+                <span>Hemat hingga 90% budget desain. Sisa uang bisa dialokasikan penuh untuk beli semen & bata!</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 font-bold text-base">✔</span>
+              <div>
+                <strong class="text-slate-950 block font-semibold">Pasti Jadi dalam 24 Jam:</strong>
+                <span>Draft selesai keesokan harinya. Tukang Anda bisa langsung tahu ukuran dinding dan mulai gali pondasi.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 font-bold text-base">✔</span>
+              <div>
+                <strong class="text-slate-950 block font-semibold">Super Simpel via WhatsApp:</strong>
+                <span>Cukup ketik ukuran panjang x lebar tanah Anda. File PDF langsung dikirim ke HP siap diprint!</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: BENTO GRID CONTOH KARYA & LAYOUT NYATA ================= -->
+  <section id="bento-karya" class="py-20 border-b border-slate-200 bg-[#f8fafc]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Dokumen Nyata Siap Tukang</span>
+        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
+          Contoh Hasil Denah yang Anda Dapatkan
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Denah rapi, jelas, dan menggunakan standar notasi tukang bangunan di seluruh Indonesia:
+        </p>
+      </div>
+
+      <!-- Bento Grid Asymmetric Layout -->
+      <div class="grid md:grid-cols-12 gap-6">
+        
+        <!-- Big Bento Box: Denah 2D Utama (Span 7) -->
+        <div class="md:col-span-7 clean-box rounded-3xl overflow-hidden flex flex-col justify-between">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative">
+            <img src="images/denah_3d_lantai1.png" alt="Contoh Denah 2D Presisi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-slate-950/85 text-white text-[10px] font-bold px-3 py-1 rounded-full backdrop-blur-md">
+              Contoh Layout 6x12m (3 Kamar)
             </div>
-            <div class="p-3.5 rounded-xl light-card text-left">
-              <span class="text-amber-600 font-mono text-lg font-bold block">199 Ribu</span>
-              <span class="text-[11px] text-slate-600 font-medium block">Harga Paling Hemat</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-700 uppercase">Anotasi Lengkap</span>
+              <span class="text-xs text-slate-500 font-mono">Format A4/A3 Ready</span>
             </div>
-            <div class="p-3.5 rounded-xl light-card text-left">
-              <span class="text-amber-600 font-mono text-lg font-bold block">Free 1x</span>
-              <span class="text-[11px] text-slate-600 font-medium block">Revisi Sekat Ruang</span>
-            </div>
-            <div class="p-3.5 rounded-xl light-card text-left">
-              <span class="text-emerald-600 font-mono text-lg font-bold block">Siap Tukang</span>
-              <span class="text-[11px] text-slate-600 font-medium block">Ukuran Meter Presisi</span>
-            </div>
+            <h3 class="font-title text-xl font-bold text-slate-950">Denah Berdimensi Meteran Lengkap</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Dilengkapi ukuran ketebalan dinding, as ruangan (misal 3.00 x 3.50 m), arah bukaan pintu, sirkulasi void taman belakang, serta tata letak furnitur standar.
+            </p>
           </div>
         </div>
 
-        <!-- Hero Visual Showcase -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden p-2 bg-white border border-slate-200 shadow-2xl">
-            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100">
-              <img src="images/highlight_split_level_4k.jpg" 
-                   alt="Contoh Desain Rumah Kilat" 
-                   class="w-full h-full object-cover">
+        <!-- Small Bento Box 1: Mezzanine / 2 Lantai (Span 5) -->
+        <div class="md:col-span-5 clean-box rounded-3xl overflow-hidden flex flex-col justify-between">
+          <div class="aspect-[16/11] bg-slate-100 overflow-hidden relative">
+            <img src="images/proyek_compact_bata.jpg" alt="Hunian Mezzanine Plafon Tinggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full shadow">
+              Kavling Sempit Mezzanine
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-amber-700 uppercase block">Solusi Ruang Vertikal</span>
+            <h3 class="font-title text-lg font-bold text-slate-950 mt-0.5">Penataan Mezzanine Hemat Cor</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Trik menambah ruang kerja atau kamar tidur tambahan di lantai atas tanpa perlu biaya ngecor dak penuh.
+            </p>
+          </div>
+        </div>
+
+        <!-- Small Bento Box 2: 3D Fasad Tampak Depan (Span 5) -->
+        <div class="md:col-span-5 clean-box rounded-3xl overflow-hidden flex flex-col justify-between">
+          <div class="aspect-[16/11] bg-slate-100 overflow-hidden relative">
+            <img src="images/proyek_7x9_split.jpg" alt="3D Fasad Rumah Modern" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-slate-950/85 text-white text-[10px] font-bold px-3 py-1 rounded-full backdrop-blur-md">
+              Paket 03 (Denah + 3D)
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-amber-700 uppercase block">Visual Tampak Depan</span>
+            <h3 class="font-title text-lg font-bold text-slate-950 mt-0.5">Panduan Bentuk & Warna Cat Fasad</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Gambaran visual tampak depan agar Anda tidak salah memilih paduan warna dinding, kusen jendela, dan kanopi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento Box 3: Rumah 2 Lantai Minimalis (Span 7) -->
+        <div class="md:col-span-7 clean-box rounded-3xl overflow-hidden flex flex-col justify-between">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden relative">
+            <img src="images/proyek_modern_split.jpg" alt="Desain 2 Lantai Minimalis" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow">
+              Kavling 2 Lantai 6x15m
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-700 uppercase">Zonasi Publik & Privat</span>
+              <span class="text-xs text-slate-500 font-mono">24 Jam Jadi</span>
+            </div>
+            <h3 class="font-title text-xl font-bold text-slate-950">Denah 2 Lantai dengan Sirkulasi Sejuk</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Penataan lantai 1 untuk ruang keluarga lapang dan lantai 2 untuk kamar tidur privat dengan bukaan jendela anti-pengap.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: SIMULASI INTERAKTIF TRANSFORMASI DENAH 2D KE REALITA ================= -->
+  <section class="py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Explanatory Column -->
+        <div class="lg:col-span-5 space-y-5 text-left">
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Simulasi Spasial</span>
+          <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 leading-tight">
+            Lihat Transformasi Denah Menjadi Rumah Nyata
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Denah 2D yang baik adalah fondasi dari rumah yang nyaman. Geser tombol slider untuk melihat bagaimana garis sekat ruangan kami diterjemahkan menjadi bangunan nyata yang estetik dan lapang.
+          </p>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
+            <span class="text-xs font-bold text-amber-900 block">💡 Tips Membangun:</span>
+            <p class="text-xs text-amber-800 leading-relaxed">
+              Jangan pernah biarkan tukang menebak-nebak ukuran sekat kamar di lapangan. Kesalahan sekat 50cm saja bisa membuat kamar terasa sumpek dan sirkulasi udara mati!
+            </p>
+          </div>
+
+          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Denah%20Kilat%20(Rp%20199.000)." 
+             target="_blank"
+             class="inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold px-6 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow transition-all hover:scale-105">
+            <span>Pesan Denah 24 Jam Selesai</span>
+            <span>⚡</span>
+          </a>
+        </div>
+
+        <!-- Right Interactive Slider -->
+        <div class="lg:col-span-7">
+          <div class="clean-box rounded-3xl p-3 sm:p-4 bg-white border border-slate-200 shadow-xl">
+            <div id="comparisonBox" class="comparison-container group cursor-ew-resize">
               
-              <!-- Floating Badge on Image -->
-              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-lg flex items-center justify-between">
-                <div>
-                  <span class="text-[10px] text-amber-700 uppercase font-extrabold tracking-wider block">Solusi Praktis Siap Bangun</span>
-                  <span class="font-title text-sm font-extrabold text-slate-950 block">Tinggal Serahkan ke Tukang!</span>
-                </div>
-                <div class="px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 text-xs font-mono font-extrabold shadow">
-                  Rp 199.000
+              <!-- Layer Before: 2D Blueprint -->
+              <div class="comparison-before">
+                <img id="comparisonImgBefore" 
+                     src="images/denah_3d_lantai1.png" 
+                     alt="Denah 2D Presisi" 
+                     class="w-full h-full object-cover">
+                
+                <div class="absolute top-4 left-4 z-20 pointer-events-none">
+                  <span class="px-3.5 py-1 rounded-full bg-slate-900/85 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
+                    📐 Denah 2D Presisi
+                  </span>
                 </div>
               </div>
+
+              <!-- Layer After: 3D Visual -->
+              <div class="comparison-after">
+                <img id="comparisonImgAfter" 
+                     src="images/highlight_split_level_4k.jpg" 
+                     alt="Visual Rumah Jadi" 
+                     class="w-full h-full object-cover">
+                
+                <div class="absolute top-4 right-4 z-20 pointer-events-none">
+                  <span class="px-3.5 py-1 rounded-full bg-amber-500 text-slate-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                    🏠 Visual Fasad Jadi
+                  </span>
+                </div>
+              </div>
+
+              <!-- Handle -->
+              <div id="comparisonHandle" class="comparison-handle">
+                <div class="comparison-handle-knob" aria-label="Geser Perbandingan">
+                  <span>⚡</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="pt-3 text-center text-xs text-slate-500 font-medium">
+              ← Geser garis tengah ke kiri / kanan untuk membandingkan →
             </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- ================= CARA PESAN 3 LANGKAH MUDAH ================= -->
-  <section id="cara-pesan" class="py-20 border-b border-slate-200 bg-slate-100/70">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- ================= SECTION 5: DAFTAR PAKET RINCI (PRICING GRID) ================= -->
+  <section id="paket-lengkap" class="py-20 border-b border-slate-200 bg-[#f8fafc]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Anti-Ribet & Serba Cepat</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Daftar Paket Lengkap</span>
         <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
-          Cara Pesan Denah Cuma 3 Langkah
+          Pilihan Paket Sesuai Rencana Anda
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Anda tidak perlu pusing gambar teknis. Cukup ikuti alur mudah ini dari handphone Anda:
+          Pilih sesuai kebutuhan lantai rumah Anda. Semua paket dikerjakan cepat, rapi, dan bergaransi!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Paket 1 -->
+        <div class="clean-box rounded-3xl p-7 bg-white border-2 border-amber-500 relative flex flex-col justify-between shadow-xl shadow-amber-500/10">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-[10px] font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider shadow whitespace-nowrap">
+            🔥 Paling Banyak Dipesan
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-1">
+              <span class="text-xs uppercase font-extrabold text-amber-700">Paket 01</span>
+              <span class="text-[10px] bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full font-bold">1 Lantai</span>
+            </div>
+            
+            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah Kilat 1 Lantai</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">Pilihan tepat untuk rumah subsidi, kavling perumahan, maupun renovasi tata ruang sekat rumah lama.</p>
+
+            <div class="my-5 py-4 border-y border-slate-100">
+              <div class="flex items-baseline gap-2">
+                <span class="line-through text-slate-400 text-sm font-mono">Rp 500.000</span>
+                <p class="font-title text-3xl font-extrabold text-amber-600 font-mono">Rp 199.000</p>
+              </div>
+              <span class="text-xs text-emerald-600 font-bold mt-1 block">⚡ Selesai dalam 24 Jam</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Denah 2D Berukuran Meteran Presisi.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Penataan Sirkulasi Udara & Cahaya.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Tata Letak Posisi Perabot Standar.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span><strong>Gratis 1x Revisi Sekat Ruangan.</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Softcopy PDF & JPEG HD Siap Print.</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2001:%20Denah%201%20Lantai%20(Rp%20199.000)." 
+             target="_blank" 
+             class="mt-7 w-full py-3.5 text-center rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs uppercase tracking-wider transition-all shadow-md">
+            Pesan Paket 1 (Rp 199.000)
+          </a>
+        </div>
+
+        <!-- Paket 2 -->
+        <div class="clean-box rounded-3xl p-7 bg-white border border-slate-200 relative flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div>
+            <div class="flex justify-between items-center mt-1">
+              <span class="text-xs uppercase font-extrabold text-slate-500">Paket 02</span>
+              <span class="text-[10px] bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-bold">2 Lantai</span>
+            </div>
+            
+            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah Kilat 2 Lantai</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">Cocok untuk rumah vertikal, kavling sempit 2 lantai, mezzanine bertingkat, maupun kos-kosan.</p>
+
+            <div class="my-5 py-4 border-y border-slate-100">
+              <div class="flex items-baseline gap-2">
+                <span class="line-through text-slate-400 text-sm font-mono">Rp 750.000</span>
+                <p class="font-title text-3xl font-extrabold text-slate-950 font-mono">Rp 299.000</p>
+              </div>
+              <span class="text-xs text-emerald-600 font-bold mt-1 block">⚡ Selesai dalam 24 Jam</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Denah Lengkap Lantai 1 & Lantai 2.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Perencanaan Tangga Aman & Nyaman.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Perencanaan Void Sirkulasi Udara.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span><strong>Gratis 1x Revisi Sekat Ruangan.</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Softcopy PDF & JPEG HD Siap Pakai.</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2002:%20Denah%202%20Lantai%20(Rp%20299.000)." 
+             target="_blank" 
+             class="mt-7 w-full py-3.5 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow">
+            Pesan Paket 2 (Rp 299.000)
+          </a>
+        </div>
+
+        <!-- Paket 3 -->
+        <div class="clean-box rounded-3xl p-7 bg-white border border-slate-200 relative flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div>
+            <div class="flex justify-between items-center mt-1">
+              <span class="text-xs uppercase font-extrabold text-slate-500">Paket 03</span>
+              <span class="text-[10px] bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-bold">Denah + 3D</span>
+            </div>
+            
+            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah + 3D Fasad</h3>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">Untuk Anda yang ingin denah ruangan berukuran sekaligus gambaran bentuk fasad tampak depan.</p>
+
+            <div class="my-5 py-4 border-y border-slate-100">
+              <div class="flex items-baseline gap-2">
+                <span class="line-through text-slate-400 text-sm font-mono">Rp 1.000.000</span>
+                <p class="font-title text-3xl font-extrabold text-slate-950 font-mono">Rp 399.000</p>
+              </div>
+              <span class="text-xs text-emerald-600 font-bold mt-1 block">⚡ Selesai 24–48 Jam</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Seluruh Item Denah 2D Lengkap.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span><strong>1 View 3D Render Fasad HD.</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Panduan Paduan Warna Cat & Kusen.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span><strong>Gratis 1x Revisi Minor Sekat.</strong></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">✔</span>
+                <span>Softcopy Format PDF & Gambar JPEG HD.</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2003:%20Denah%20%2B%203D%20Fasad%20(Rp%20399.000)." 
+             target="_blank" 
+             class="mt-7 w-full py-3.5 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow">
+            Pesan Paket 3 (Rp 399.000)
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: BUKTI TESTIMONI CHAT WHATSAPP (SOCIAL PROOF) ================= -->
+  <section class="py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Kepuasan Pemilik Rumah</span>
+        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
+          Apa Kata Mereka yang Sudah Pesan?
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Tangkapan pesan nyata dari pemilik tanah dan mandor bangunan setelah menerima denah:
         </p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
         
-        <!-- Langkah 1 -->
-        <div class="p-7 rounded-2xl light-card space-y-4 text-center md:text-left">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 font-mono text-xl font-bold flex items-center justify-center mx-auto md:mx-0 border border-amber-300">
-            01
+        <!-- Chat 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">
+              H
+            </div>
+            <div>
+              <span class="font-bold text-xs text-slate-950 block">Pak Hendra • Bekasi</span>
+              <span class="text-[10px] text-slate-500">Lahan 6x12 (3 Kamar Tidur)</span>
+            </div>
           </div>
-          <h3 class="font-title text-xl font-bold text-slate-950">Kirim Ukuran Tanah ke WA</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Ketik ukuran panjang & lebar tanah Anda di chat WA, serta berapa jumlah kamar tidur dan ruang yang Anda mau (misal: 6x12m, 3 kamar, 1 mushola).
-          </p>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 leading-relaxed italic">
+            "Mas, denahnya udah saya print dan tukang langsung ngerti pas baca ukurannya. Kamar utama luas dan ada void taman belakangnya. Makasih ya beneran 24 jam jadi!"
+          </div>
+          <div class="flex text-amber-400 text-xs gap-1">★★★★★ <span class="text-slate-500 text-[10px] font-sans">Verified Customer</span></div>
         </div>
 
-        <!-- Langkah 2 -->
-        <div class="p-7 rounded-2xl light-card space-y-4 text-center md:text-left">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 font-mono text-xl font-bold flex items-center justify-center mx-auto md:mx-0 border border-amber-300">
-            02
+        <!-- Chat 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-amber-600 text-white font-bold text-xs flex items-center justify-center">
+              R
+            </div>
+            <div>
+              <span class="font-bold text-xs text-slate-950 block">Ibu Ratna • Sidoarjo</span>
+              <span class="text-[10px] text-slate-500">Lahan 7x15 (Rumah Tumbuh)</span>
+            </div>
           </div>
-          <h3 class="font-title text-xl font-bold text-slate-950">Transfer Pembayaran Cepat</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Lakukan pembayaran mudah via Transfer Bank atau QRIS sekali bayar (Rp 199.000). Tanpa biaya tersembunyi apapun.
-          </p>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 leading-relaxed italic">
+            "Awalnya ragu karena cuma 200rb kirain gambarnya asal-asalan. Ternyata rapi banget ada ukuran tebal dindingnya, kemarin tanya arsitek lain minta 2.5 juta. Recommended!"
+          </div>
+          <div class="flex text-amber-400 text-xs gap-1">★★★★★ <span class="text-slate-500 text-[10px] font-sans">Verified Customer</span></div>
         </div>
 
-        <!-- Langkah 3 -->
-        <div class="p-7 rounded-2xl light-card space-y-4 text-center md:text-left">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 font-mono text-xl font-bold flex items-center justify-center mx-auto md:mx-0 border border-emerald-300">
-            03
+        <!-- Chat 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">
+              D
+            </div>
+            <div>
+              <span class="font-bold text-xs text-slate-950 block">Mas Dodi • Tangerang</span>
+              <span class="text-[10px] text-slate-500">Renovasi Mezzanine</span>
+            </div>
           </div>
-          <h3 class="font-title text-xl font-bold text-slate-950">Denah Jadi dalam 24 Jam!</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Dalam 24 jam, file PDF & JPG denah 2D presisi resolusi tinggi langsung kami kirim ke WhatsApp Anda. Siap diprint atau dikirim ke tukang!
-          </p>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 leading-relaxed italic">
+            "Pelayanan adminnya sat-set banget. Sempat minta geser pintu kamar mandi dikit langsung dibenerin gratis tanpa ribet. Mantap Desain Rumah Kilat!"
+          </div>
+          <div class="flex text-amber-400 text-xs gap-1">★★★★★ <span class="text-slate-500 text-[10px] font-sans">Verified Customer</span></div>
         </div>
 
       </div>
@@ -420,360 +864,93 @@
     </div>
   </section>
 
-  <!-- ================= PILIHAN PAKET HARGA (THE CORE SALES ENGINE) ================= -->
-  <section id="paket" class="py-24 border-b border-slate-200 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- ================= SECTION 7: GARANSI & FAQ (2-COLUMN SPLIT LAYOUT) ================= -->
+  <section id="faq" class="py-20 border-b border-slate-200 bg-[#f8fafc]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Harga Terjangkau & Transparan</span>
-        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
-          Daftar Paket Desain Rumah Kilat
-        </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Pilih paket yang paling cocok untuk rencana hunian Anda. Semua paket dikerjakan cepat & rapi!
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8 items-stretch pt-4">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
         
-        <!-- PAKET 1: RP 199.000 (BEST SELLER) -->
-        <div class="rounded-2xl p-7 pt-9 bg-gradient-to-b from-amber-50/80 via-white to-white border-2 border-amber-500 relative flex flex-col justify-between shadow-xl shadow-amber-500/10 hover:shadow-2xl transition-all">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 text-[10px] font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow whitespace-nowrap">
-            🔥 Paling Laris • 24 Jam Selesai
-          </div>
+        <!-- Left Column: Guarantee Seal & Quick Contact -->
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Garansi Layanan</span>
+          <h2 class="font-title text-3xl font-extrabold text-slate-950">
+            Jaminan Tanpa Was-Was & Revisi Gratis
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Kami menjaga komitmen kecepatan dan kualitas setiap pesanan. Jika ada pertanyaan sebelum order, admin kami siap membalas dalam hitungan menit di WhatsApp.
+          </p>
 
-          <div>
-            <div class="flex justify-between items-center mt-1">
-              <span class="text-xs uppercase font-extrabold tracking-widest text-amber-700">Paket 01</span>
-              <span class="text-[10px] bg-amber-100 text-amber-900 px-2.5 py-1 rounded-full font-bold border border-amber-300">1 Lantai</span>
-            </div>
-            
-            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah Kilat 1 Lantai</h3>
-            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Sangat cocok untuk rumah tinggal keluarga, kavling perumahan, rumah subsidi, maupun renovasi sekat ruangan.</p>
-
-            <div class="my-6 py-4 border-y border-slate-200">
-              <span class="text-xs text-slate-500">Tarif Jasa Cepat</span>
-              <div class="flex items-baseline gap-2 mt-1">
-                <span class="line-through text-slate-400 text-base font-mono">Rp 500.000</span>
-                <p class="font-title text-3xl font-extrabold text-amber-600 font-mono">
-                  Rp 199.000
-                </p>
-                <span class="bg-red-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-md">-60%</span>
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-lg font-bold">
+                ✓
               </div>
-              <span class="text-xs text-emerald-600 font-bold mt-1.5 block">⚡ Pengerjaan Super Cepat 24 Jam Selesai</span>
+              <div>
+                <span class="font-bold text-sm text-slate-950 block">Garansi 24 Jam Pasti Selesai</span>
+                <span class="text-xs text-slate-500">Draft denah pertama terkirim tepat waktu.</span>
+              </div>
             </div>
-
-            <div class="space-y-4 text-xs text-slate-700">
-              <span class="font-bold text-slate-900 block uppercase tracking-wider text-[11px] text-amber-700">Rincian Dokumen yang Didapat:</span>
-              
-              <ul class="space-y-2.5">
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Denah Tata Ruang 2D Presisi:</strong> Dilengkapi ukuran meteran dinding per ruangan.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Penataan Zonasi Ruang Lapang:</strong> Sirkulasi udara alami dan pencahayaan optimal.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Tata Letak Perabot Standar:</strong> Posisi kasur, lemari, dapur, dan kamar mandi rapi.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Gratis 1x Revisi Sekat Ruang:</strong> Penyesuaian jika ada ruangan yang ingin digeser.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Softcopy Format PDF & JPG HD:</strong> Siap cetak kertas ukuran A4 maupun A3.</span>
-                </li>
-              </ul>
+            <div class="flex items-center gap-3 pt-2 border-t border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-lg font-bold">
+                ↻
+              </div>
+              <div>
+                <span class="font-bold text-sm text-slate-950 block">Gratis 1x Revisi Sekat Ruang</span>
+                <span class="text-xs text-slate-500">Bisa geser posisi sekat dan pintu sampai pas.</span>
+              </div>
             </div>
           </div>
 
-          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2001:%20Denah%20Kilat%201%20Lantai%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:..." 
+          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20tanya-tanya%20dulu%20soal%20denah%20tanah%20saya." 
              target="_blank" 
-             class="mt-8 w-full py-4 text-center rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold text-xs uppercase tracking-wider transition-all shadow-md">
-            Pesan Denah 1 Lantai (Rp 199.000)
+             class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800 underline">
+            <span>Mau tanya dulu sebelum pesan? Chat WA di sini →</span>
           </a>
         </div>
 
-        <!-- PAKET 2: RP 299.000 (RUMAH 2 LANTAI) -->
-        <div class="rounded-2xl p-7 pt-9 bg-white border border-slate-200 relative flex flex-col justify-between hover:border-slate-300 transition-all shadow-md hover:shadow-xl">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-slate-900 text-amber-400 text-[10px] font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider shadow whitespace-nowrap">
-            Bertingkat & Mezzanine
-          </div>
-
-          <div>
-            <div class="flex justify-between items-center mt-1">
-              <span class="text-xs uppercase font-extrabold tracking-widest text-slate-500">Paket 02</span>
-              <span class="text-[10px] bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full font-bold border border-slate-200">2 Lantai</span>
-            </div>
-            
-            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah Kilat 2 Lantai</h3>
-            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Cocok untuk hunian vertikal, kavling sempit 2 lantai, rumah mezzanine, maupun kos-kosan kompak.</p>
-
-            <div class="my-6 py-4 border-y border-slate-200">
-              <span class="text-xs text-slate-500">Tarif Jasa Cepat</span>
-              <div class="flex items-baseline gap-2 mt-1">
-                <span class="line-through text-slate-400 text-base font-mono">Rp 750.000</span>
-                <p class="font-title text-3xl font-extrabold text-slate-950 font-mono">
-                  Rp 299.000
-                </p>
-                <span class="bg-red-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-md">-60%</span>
-              </div>
-              <span class="text-xs text-emerald-600 font-bold mt-1.5 block">⚡ Pengerjaan 24 Jam Selesai</span>
-            </div>
-
-            <div class="space-y-4 text-xs text-slate-700">
-              <span class="font-bold text-slate-900 block uppercase tracking-wider text-[11px] text-amber-700">Rincian Dokumen yang Didapat:</span>
-              
-              <ul class="space-y-2.5">
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Denah Lengkap Lantai 1 & Lantai 2:</strong> Notasi dimensi ukuran presisi setiap lantai.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Perencanaan Posisi Tangga Nyaman:</strong> Pijakan tangga aman dan tidak curam.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Perencanaan Void Sirkulasi Udara:</strong> Rumah tetap sejuk dan tidak pengap.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Gratis 1x Revisi Sekat Ruang:</strong> Penyesuaian layout kedua lantai.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Softcopy Format PDF & JPG High Resolution.</strong></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2002:%20Denah%20Kilat%202%20Lantai%20(Rp%20299.000).%20Ini%20ukuran%20tanah%20saya:..." 
-             target="_blank" 
-             class="mt-8 w-full py-4 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-md">
-            Pesan Denah 2 Lantai (Rp 299.000)
-          </a>
-        </div>
-
-        <!-- PAKET 3: RP 399.000 (DENAH + 3D FASAD) -->
-        <div class="rounded-2xl p-7 pt-9 bg-white border border-slate-200 relative flex flex-col justify-between hover:border-slate-300 transition-all shadow-md hover:shadow-xl">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-700 text-white text-[10px] font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider shadow whitespace-nowrap">
-            Komplit Denah + 3D Tampak
-          </div>
-
-          <div>
-            <div class="flex justify-between items-center mt-1">
-              <span class="text-xs uppercase font-extrabold tracking-widest text-slate-500">Paket 03</span>
-              <span class="text-[10px] bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full font-bold border border-slate-200">Denah + 3D</span>
-            </div>
-            
-            <h3 class="font-title text-2xl font-bold text-slate-950 mt-2">Denah 2D + 3D Fasad</h3>
-            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Paket komplit untuk Anda yang ingin melihat denah ruangan sekaligus gambaran bentuk luar (fasad) tampak depan rumah.</p>
-
-            <div class="my-6 py-4 border-y border-slate-200">
-              <span class="text-xs text-slate-500">Tarif Jasa Cepat</span>
-              <div class="flex items-baseline gap-2 mt-1">
-                <span class="line-through text-slate-400 text-base font-mono">Rp 1.000.000</span>
-                <p class="font-title text-3xl font-extrabold text-slate-950 font-mono">
-                  Rp 399.000
-                </p>
-                <span class="bg-red-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-md">-60%</span>
-              </div>
-              <span class="text-xs text-emerald-600 font-bold mt-1.5 block">⚡ Pengerjaan 24–48 Jam Selesai</span>
-            </div>
-
-            <div class="space-y-4 text-xs text-slate-700">
-              <div class="p-2.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 font-bold">
-                ★ Termasuk Seluruh Item Denah 2D Lengkap
-              </div>
-
-              <span class="font-bold text-slate-900 block uppercase tracking-wider text-[11px] text-amber-700">Tambahan Dokumen Visual 3D:</span>
-              
-              <ul class="space-y-2.5">
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">1 View 3D Render Fasad HD:</strong> Tampak depan rumah modern dan proporsional.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Konsep Kombinasi Cat & Material:</strong> Inspirasi paduan warna dinding dan kanopi.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Gratis 1x Revisi Minor Penataan Sekat.</strong></span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-amber-600 font-bold text-sm">✔</span>
-                  <span><strong class="text-slate-950">Softcopy Format PDF & Gambar JPEG HD Siap Pakai.</strong></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Paket%2003:%20Denah%20%2B%203D%20Fasad%20(Rp%20399.000).%20Ini%20ukuran%20tanah%20saya:..." 
-             target="_blank" 
-             class="mt-8 w-full py-4 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-md">
-            Pesan Denah + 3D (Rp 399.000)
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SIMULASI DENAH (INTERACTIVE BEFORE/AFTER SLIDER) ================= -->
-  <section id="transformasi" class="py-24 border-b border-slate-200 bg-slate-100/70 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Simulasi Visual Spasial</span>
-        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
-          Dari Denah 2D Jadi Bangunan Nyata
-        </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Geser garis tengah slider untuk melihat bagaimana denah tata ruang presisi kami bertransformasi menjadi visual rumah yang estetik dan lapang.
-        </p>
-      </div>
-
-      <!-- Before/After Slider Container -->
-      <div class="max-w-5xl mx-auto rounded-3xl p-3 sm:p-5 bg-white border border-slate-200 shadow-xl">
-        <div id="comparisonBox" class="comparison-container group cursor-ew-resize">
+        <!-- Right Column: Accordion FAQ -->
+        <div class="lg:col-span-7 space-y-3.5">
           
-          <!-- Layer Before: 2D Floorplan Blueprint -->
-          <div class="comparison-before">
-            <img id="comparisonImgBefore" 
-                 src="images/denah_3d_lantai1.png" 
-                 alt="Denah 2D Tata Ruang Presisi" 
-                 class="w-full h-full object-cover">
-            
-            <div class="absolute top-4 left-4 z-20 pointer-events-none">
-              <span class="px-3.5 py-1.5 rounded-xl bg-slate-900/85 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md flex items-center gap-1.5">
-                <span>📐</span>
-                <span>Denah 2D Presisi</span>
-              </span>
-            </div>
-          </div>
-
-          <!-- Layer After: 3D Render Photorealistic Fasad -->
-          <div class="comparison-after">
-            <img id="comparisonImgAfter" 
-                 src="images/highlight_split_level_4k.jpg" 
-                 alt="Visual 3D Fasad Rumah Jadi" 
-                 class="w-full h-full object-cover">
-            
-            <div class="absolute top-4 right-4 z-20 pointer-events-none">
-              <span class="px-3.5 py-1.5 rounded-xl bg-amber-500/95 text-slate-950 border border-amber-400 text-xs font-extrabold uppercase tracking-wider backdrop-blur-md shadow-md flex items-center gap-1.5">
-                <span>🏠</span>
-                <span>Visual Nyata</span>
-              </span>
-            </div>
-          </div>
-
-          <!-- Draggable Split Handle & Center Knob -->
-          <div id="comparisonHandle" class="comparison-handle">
-            <div class="comparison-handle-knob" aria-label="Geser Perbandingan">
-              <span>⚡</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Presets Selection Bar -->
-        <div class="mt-4 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <span class="text-slate-500 font-medium">Tips: Tarik tombol tengah ke kiri/kanan untuk melihat denah</span>
-          <a href="#paket" class="text-amber-600 font-bold hover:underline">Pesan Denah Kilat Rp 199.000 →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= CONTOH DESAIN / GALERI MODULAR ================= -->
-  <section id="galeri" class="py-24 border-b border-slate-200 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Inspirasi Tata Ruang</span>
-        <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
-          Contoh Desain Lahan Favorit
-        </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Berikut beberapa contoh penataan tata ruang compact yang sering dipesan calon pemilik rumah di Indonesia:
-        </p>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Contoh 1: Lahan 6x10 / 6x12 -->
-        <div class="rounded-2xl overflow-hidden light-card flex flex-col justify-between">
-          <div class="aspect-[16/10] overflow-hidden bg-slate-100">
-            <img src="images/proyek_7x9_split.jpg" alt="Rumah Kompak Lahan 6x10" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">Kavling 6x10 s/d 6x12</span>
-              <span class="text-xs text-slate-500 font-mono">1 Lantai</span>
-            </div>
-            <h3 class="font-title text-lg font-bold text-slate-950">Rumah Kompak 2–3 Kamar</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Memaksimalkan sirkulasi udara dengan void taman belakang, ruang keluarga terbuka, dan carport mobil.
+          <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-sm transition-all" open>
+            <summary class="font-bold text-sm sm:text-base text-slate-950 cursor-pointer list-none flex items-center justify-between">
+              <span>Apakah benar-benar selesai dalam 24 jam?</span>
+              <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+              Ya, benar! Untuk Paket 1 (1 Lantai) dan Paket 2 (2 Lantai), draft denah pertama akan selesai dan dikirim ke WhatsApp Anda maksimal 24 jam setelah rincian ukuran tanah dan konfirmasi pembayaran kami terima.
             </p>
-            <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20bikin%20denah%20mirip%20model%20Rumah%20Kompak%202-3%20Kamar%20(Rp%20199.000)." 
-               target="_blank" 
-               class="block text-center w-full py-2.5 rounded-xl bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-slate-200 text-xs font-bold transition-all">
-              Pesan Model Ini (Rp 199.000)
-            </a>
-          </div>
-        </div>
+          </details>
 
-        <!-- Contoh 2: Lahan 7x9 Mezzanine -->
-        <div class="rounded-2xl overflow-hidden light-card flex flex-col justify-between">
-          <div class="aspect-[16/10] overflow-hidden bg-slate-100">
-            <img src="images/proyek_compact_bata.jpg" alt="Rumah Mezzanine Industrial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">Kavling 7x9 / 7x12</span>
-              <span class="text-xs text-slate-500 font-mono">Mezzanine</span>
-            </div>
-            <h3 class="font-title text-lg font-bold text-slate-950">Hunian Mezzanine Plafon Tinggi</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Trik ruang vertikal untuk menambah ruang santai / kamar kerja di lantai atas tanpa biaya dak cor penuh.
+          <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-sm transition-all">
+            <summary class="font-bold text-sm sm:text-base text-slate-950 cursor-pointer list-none flex items-center justify-between">
+              <span>Data apa saja yang perlu saya siapkan untuk order?</span>
+              <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+              Sangat simpel: (1) Ukuran panjang x lebar tanah Anda, (2) Kebutuhan ruangan yang diinginkan (misal: 3 kamar tidur, 1 dapur, 1 ruang tamu), dan (3) Posisi arah hadap jalan depan. Cukup ketik langsung di chat WhatsApp kami!
             </p>
-            <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20bikin%20denah%20model%20Mezzanine%20(Rp%20299.000)." 
-               target="_blank" 
-               class="block text-center w-full py-2.5 rounded-xl bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-slate-200 text-xs font-bold transition-all">
-              Pesan Model Ini (Rp 299.000)
-            </a>
-          </div>
-        </div>
+          </details>
 
-        <!-- Contoh 3: Lahan 2 Lantai Minimalis -->
-        <div class="rounded-2xl overflow-hidden light-card flex flex-col justify-between">
-          <div class="aspect-[16/10] overflow-hidden bg-slate-100">
-            <img src="images/proyek_modern_split.jpg" alt="Rumah 2 Lantai Minimalis" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">Kavling 6x15 / 8x12</span>
-              <span class="text-xs text-slate-500 font-mono">2 Lantai</span>
-            </div>
-            <h3 class="font-title text-lg font-bold text-slate-950">Modern Minimalis 3–4 Kamar</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Penataan privat di lantai 2 dan area publik leluasa di lantai 1 dengan balkon santai dan ruang cuci jemur.
+          <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-sm transition-all">
+            <summary class="font-bold text-sm sm:text-base text-slate-950 cursor-pointer list-none flex items-center justify-between">
+              <span>Bagaimana kalau pembagian ruangannya belum pas?</span>
+              <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+              Setiap paket sudah termasuk <strong>Gratis 1x Revisi Sekat Ruangan</strong>. Anda bisa memberikan koreksi (misalnya: pintu kamar mandi mau digeser, kamar tidur ditukar posisi, atau dapur diperlebar) dan kami sesuaikan gambarnya tanpa biaya tambahan.
             </p>
-            <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20bikin%20denah%20Rumah%202%20Lantai%20(Rp%20299.000)." 
-               target="_blank" 
-               class="block text-center w-full py-2.5 rounded-xl bg-slate-100 hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-slate-200 text-xs font-bold transition-all">
-              Pesan Model Ini (Rp 299.000)
-            </a>
-          </div>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-sm transition-all">
+            <summary class="font-bold text-sm sm:text-base text-slate-950 cursor-pointer list-none flex items-center justify-between">
+              <span>Apakah tukang bangunan bisa langsung paham denahnya?</span>
+              <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+              Pasti paham! Denah kami lengkapi dengan ukuran meteran dinding per ruangan (misal 3.00 x 3.00 meter), posisi pintu, jendela, dan ketebalan dinding yang sudah menjadi standar acuan tukang bangunan di lapangan.
+            </p>
+          </details>
+
         </div>
 
       </div>
@@ -781,74 +958,17 @@
     </div>
   </section>
 
-  <!-- ================= TANYA JAWAB (FAQ KILAT) ================= -->
-  <section id="faq" class="py-20 border-b border-slate-200 bg-slate-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      
-      <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Pertanyaan Umum</span>
-        <h2 class="font-title text-3xl font-extrabold text-slate-950 mt-1">FAQ Desain Rumah Kilat</h2>
-        <p class="text-slate-600 text-sm mt-2">Jawaban singkat untuk hal-hal yang sering ditanyakan sebelum memesan.</p>
-      </div>
-
-      <div class="space-y-4">
-        
-        <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-md transition-all">
-          <summary class="font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between">
-            <span>Apakah benar-benar selesai dalam 24 jam?</span>
-            <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
-          </summary>
-          <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Ya, benar! Untuk Paket 1 (1 Lantai) dan Paket 2 (2 Lantai), draft denah pertama akan selesai dan dikirim ke WhatsApp Anda maksimal 24 jam setelah rincian ukuran tanah dan konfirmasi pembayaran kami terima.
-          </p>
-        </details>
-
-        <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-md transition-all">
-          <summary class="font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between">
-            <span>Bagaimana kalau pembagian ruangannya belum cocok?</span>
-            <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
-          </summary>
-          <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Setiap paket sudah termasuk <strong class="text-slate-900">Gratis 1x Revisi Sekat Ruangan</strong>. Anda bisa memberikan koreksi (misalnya: pintu kamar mandi mau digeser, kamar tidur ditukar posisi, atau dapur diperlebar) dan kami akan sesuaikan gambarnya.
-          </p>
-        </details>
-
-        <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-md transition-all">
-          <summary class="font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between">
-            <span>Data apa saja yang perlu saya siapkan?</span>
-            <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
-          </summary>
-          <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Sangat simpel: (1) Ukuran panjang x lebar tanah Anda, (2) Kebutuhan ruangan yang diinginkan (misal: 3 kamar, 1 dapur, 1 ruang tamu), dan (3) Posisi arah jalan depan. Cukup ketik langsung di chat WhatsApp kami!
-          </p>
-        </details>
-
-        <details class="group p-5 rounded-2xl bg-white border border-slate-200 open:border-amber-500/70 open:shadow-md transition-all">
-          <summary class="font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between">
-            <span>Apakah gambar denah ini bisa langsung dipahami tukang?</span>
-            <span class="text-amber-600 group-open:rotate-180 transition-transform text-lg">▾</span>
-          </summary>
-          <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Sangat bisa! Denah dilengkapi dengan notasi ukuran dinding per meteran (misal 3.00 x 3.00 meter), posisi pintu, jendela, dan ketebalan dinding yang sudah menjadi standar acuan tukang bangunan di lapangan.
-          </p>
-        </details>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= BOTTOM BANNER CTA ================= -->
+  <!-- ================= BOTTOM CALL TO ACTION ================= -->
   <section class="py-16 bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 text-slate-950">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
       <span class="text-xs uppercase font-extrabold tracking-widest bg-black/15 px-3 py-1 rounded-full text-slate-950">
-        ⚡ Wujudkan Rumah Nyaman Tanpa Boncos
+        ⚡ Mulai Bangun Rumah Tanpa Boncos
       </span>
       <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950">
-        Mulai Bangun Rumah Anda dengan Denah yang Tepat!
+        Kirim Ukuran Tanah Anda Hari Ini, Denah Jadi Besok!
       </h2>
       <p class="text-slate-900 text-sm sm:text-base max-w-xl mx-auto font-medium">
-        Kirim ukuran tanah Anda sekarang ke WhatsApp kami. Denah 2D rapi siap tukang selesai dalam 24 jam hanya Rp 199.000!
+        Tukang Anda tidak perlu menunggu lama. Cukup klik tombol di bawah dan konsultasikan rencana tanah Anda via WhatsApp.
       </p>
       <div class="pt-2">
         <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Denah%20Kilat%2024%20Jam%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:..." 
@@ -857,7 +977,7 @@
           <svg class="w-4 h-4 fill-current text-amber-400" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
-          <span>Pesan via WhatsApp Sekarang</span>
+          <span>Pesan via WhatsApp Sekarang (0812-6744-7101)</span>
         </a>
       </div>
     </div>
@@ -871,7 +991,7 @@
           <span class="text-amber-400 font-bold text-lg">⚡</span>
           <span class="font-title font-bold text-white text-lg">DESAIN RUMAH KILAT</span>
         </div>
-        <p class="text-xs text-slate-400 mt-1">Jasa Pembuatan Denah Rumah Cepat, Rapi & Terjangkau untuk Seluruh Indonesia.</p>
+        <p class="text-xs text-slate-400 mt-1">Layanan Pembuatan Denah Rumah Cepat, Presisi & Terjangkau se-Indonesia.</p>
         <p class="text-[11px] text-slate-500 mt-1">© 2026 Desain Rumah Kilat. Hak Cipta Dilindungi.</p>
       </div>
 
@@ -887,7 +1007,7 @@
     </div>
   </footer>
 
-  <!-- ================= FLOATING STICKY ACTION BAR ================= -->
+  <!-- ================= FLOATING STICKY ACTION BUTTON ================= -->
   <aside aria-label="Kontak Cepat WhatsApp" class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
     <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20mau%20pesan%20Denah%20Kilat%2024%20Jam%20(Rp%20199.000)." 
        target="_blank" 
@@ -896,23 +1016,41 @@
       <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
       </svg>
-      <span>Pesan Denah Kilat (WA)</span>
+      <span>Pesan Denah (WA)</span>
     </a>
   </aside>
 
   <!-- ================= JAVASCRIPT ================= -->
   <script>
-    // 1. Mobile Menu Toggle
-    const mobileBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (mobileBtn && mobileMenu) {
-      mobileBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-      // Close mobile menu on clicking any link
-      mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-      });
+    // 1. Dynamic Package Selector in Hero Section
+    function selectPackage(pkgId, title, price, time, waUrl) {
+      // Update Tab Styles
+      for (let i = 1; i <= 3; i++) {
+        const btn = document.getElementById(`btn-pkg-${i}`);
+        if (!btn) continue;
+        if (i === pkgId) {
+          btn.className = "p-4 rounded-2xl border-2 border-amber-500 bg-amber-50/70 text-left transition-all relative overflow-hidden group shadow-sm";
+        } else {
+          btn.className = "p-4 rounded-2xl border-2 border-slate-200 bg-white hover:border-slate-300 text-left transition-all relative overflow-hidden group";
+        }
+      }
+
+      // Update Texts
+      document.getElementById('selectedPkgTitle').innerText = title;
+      document.getElementById('selectedPkgPrice').innerText = price;
+      document.getElementById('selectedPkgTime').innerText = `⚡ ${time}`;
+      
+      const descEl = document.getElementById('selectedPkgDesc');
+      if (pkgId === 1) {
+        descEl.innerText = "Termasuk: Denah 2D berdimensi meteran presisi + Free 1x revisi sekat + Softcopy PDF & JPG HD siap print A4/A3.";
+      } else if (pkgId === 2) {
+        descEl.innerText = "Termasuk: Denah Lantai 1 & Lantai 2 presisi + Rencana posisi tangga & void sirkulasi + Free 1x revisi sekat + PDF HD.";
+      } else if (pkgId === 3) {
+        descEl.innerText = "Termasuk: Denah 2D Lengkap + 1 View 3D Render Fasad HD Tampak Depan + Konsep paduan warna cat & kusen + PDF & JPG HD.";
+      }
+
+      // Update WhatsApp Link
+      document.getElementById('btnDirectWa').href = waUrl;
     }
 
     // 2. Interactive X-Ray Before/After Slider Engine
