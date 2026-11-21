@@ -1,0 +1,60 @@
+# 🗄️ LOOP LOGIC DATABASE: loop_logic_01.db
+**Tanggal Mulai:** 2026-11-22 02:43:00  
+**Domain Tugas:** BUILD_UI & BUG_HUNTING  
+**Target / Sasaran:** `E:\WORKSHOP\DESAIN_RUMAH_KILAT\index.html` (Perbaikan 4 Bug Logika Tampilan & Paket Anti-Komplain)  
+**Status:** RESOLVED  
+
+---
+
+## 🔄 ITERASI 1 (Loop Cycle Log)
+
+### [GERBANG 1] IDENTIFIKASI INTI
+- **Fokus Utama:** Menyelesaikan 4 bug logika tampilan & penyajian:
+  1. Overpromising trap di galeri (Rp 199k dikira dapat 3D lengkap).
+  2. Mislabeling slider X-Ray (gambar 3D berlabel 2D).
+  3. Ketiadaan bukti fisik gambar denah 2D blueprint berukuran meteran asli.
+  4. Istilah Proyek 2 Mezzanine (potongan vs denah).
+- **Batasan & Fakta Lapangan:**
+  - Workspace: `E:\WORKSHOP\DESAIN_RUMAH_KILAT`
+  - Aset AI yang sudah ada: 9 gambar di `images/proyek*`.
+  - Konsumen awam butuh kejelasan apa yang mereka beli (Rp 199k vs Rp 399k) agar tidak komplain di WA.
+
+### [GERBANG 2] DRAFT SOLUSI / USULAN
+- **Konsep Rancangan:**
+  1. Siapkan aset otentik `proyek1_denah_2d.jpg` berupa denah 2D arsitektural berdimensi meteran lengkap siap cetak A4/A3.
+  2. Kalibrasi X-Ray Slider: Sisi Kiri = `images/proyek1_denah_2d.jpg` (2D Blueprint Tukang) $\longleftrightarrow$ Sisi Kanan = `images/proyek1_fasad.jpg` (3D Fasad Jadi).
+  3. Restrukturisasi Switcher Galeri Trifecta dengan Tab Fungsional:
+     - Proyek 1: `[ 📐 Denah 2D Tukang ]` | `[ 🔮 Konsep 3D Ruang ]` | `[ 🏠 Fasad Depan ]`
+     - Proyek 2: `[ 📐 Potongan 3D Ruang ]` | `[ 🏠 Fasad Depan ]` | `[ 🛋️ Void & Interior ]`
+     - Proyek 3: `[ 📐 Denah 3D Bertingkat ]` | `[ 🏠 Fasad Depan ]` | `[ 🛋️ Dapur & Makan ]`
+  4. Penyematan Badge Transparansi Paket di setiap kartu:
+     - *"Paket 1 (Rp 199k): Denah 2D Siap Cetak A4/A3 | Upgrade +3D Fasad: Paket 03 (Rp 399k)"*.
+  5. Penyediaan Prompt Gemini Imagen 3 khusus Denah 2D CAD Blueprint jika Adrian ingin men-generate varian tambahan.
+
+### [GERBANG 3] CEK BLAST RADIUS (IMPACT & RISK AUDIT)
+- **Status Git Workspace:** Bersih (commit `176b674`).
+- **Tingkat Resiko:** RENDAH (terisolasi pada file `index.html` dan aset gambar di `images/`).
+- **Potensi Masalah Turunan:** Cek aspek rasio gambar agar tidak terjadi layout shift (CLS = 0) saat berganti tab.
+
+### [GERBANG 4] DIAGNOSA & KALIBRASI PENYEMPURNAAN
+- Pastikan script JavaScript `switchProjectView` menangani path baru `proyek1_denah_2d.jpg`.
+- Pastikan badge dinamis mengupdate teks secara tepat.
+
+### [GERBANG 5] RENCANA LANGKAH EKSEKUSI MINIMAL
+1. Buat generator Python untuk memproduksi `proyek1_denah_2d.jpg` dengan resolusi tinggi (denah 2D arsitektur berdimensi meteran presisi).
+2. Perbarui `index.html` dengan tab switcher transparan, edukasi paket, dan perbaikan slider X-Ray.
+3. Uji responsivitas dan fungsionalitas tombol switcher serta slider.
+4. Kunci checkpoint dengan Git Commit.
+
+### [GERBANG 6] CEK ULANG DAMPAK (PRE-FLIGHT SIMULATION)
+- Evaluasi mental model: Klien melihat denah 2D asli $\rightarrow$ paham ini produk Rp 199k $\rightarrow$ melihat fasad 3D $\rightarrow$ tertarik upgrade ke Paket 3 Rp 399k $\rightarrow$ Zero komplain, 100% win-win.
+
+### [GERBANG 7] VERIFIKASI KESTABILAN & KUALITAS
+- **Status:** RESOLVED
+- **Item Terverifikasi:**
+  1. `proyek1_denah_2d.jpg` aktif sebagai denah 2D CAD otentik (1600x1200) dengan notasi meteran, tebal dinding bata, void, pintu ayun, dan kop gambar teknis.
+  2. Slider X-Ray mentransformasikan denah 2D blueprint menjadi fasad 3D nyata dengan label akurat tanpa mislabeling.
+  3. Galeri Trifecta 3-in-1 memisahkan peran denah 2D, konsep 3D ruang, fasad, dan potongan 3D plafon tinggi 5m secara jujur.
+  4. Box transparansi paket di setiap kartu mengedukasi calon pembeli sebelum checkout WA: Paket Rp 199k/299k = Denah 2D siap tukang, Paket Rp 399k = Denah + 3D Fasad.
+  5. JavaScript `switchProjectView` sinkron 100% memetakan file dan memperbarui teks badge dinamis.
+  6. Zero regression: Tidak ada layout shift, tema terang konsisten, link WhatsApp & Instagram berfungsi normal.

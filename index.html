@@ -444,10 +444,10 @@
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Trifecta 3-in-1 Interactive Gallery</span>
         <h2 class="font-title text-3xl sm:text-4xl font-extrabold text-slate-950 mt-1">
-          Koleksi Desain Denah 3D Favorit
+          Koleksi Desain Denah & Visual Nyata
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Jelajahi setiap proyek dari 3 sudut pandang: <strong>Denah 3D Tembus Pandang</strong>, <strong>Fasad Depan</strong>, dan <strong>Interior Nyata</strong>. Klik tombol tab untuk mengganti tampilan!
+          Jelajahi setiap proyek dari 3 sudut pandang: <strong>Denah 2D Siap Tukang</strong>, <strong>Konsep 3D Ruang</strong>, dan <strong>Fasad Tampak Depan</strong>. Klik tombol tab untuk mengganti tampilan!
         </p>
       </div>
 
@@ -464,19 +464,19 @@
               <!-- 3-in-1 Toggle Pills -->
               <div class="flex items-center gap-1 bg-white p-1 rounded-xl border border-slate-200">
                 <button type="button" 
-                        onclick="switchProjectView(1, 'denah_3d', this)" 
+                        onclick="switchProjectView(1, 'denah_2d', this)" 
                         class="px-2.5 py-1 rounded-lg text-[10px] font-extrabold text-slate-950 bg-amber-400 shadow-sm transition-colors">
-                  📐 Denah 3D
+                  📐 Denah 2D
+                </button>
+                <button type="button" 
+                        onclick="switchProjectView(1, 'denah_3d', this)" 
+                        class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-slate-600 hover:bg-slate-100 transition-colors">
+                  🔮 Konsep 3D
                 </button>
                 <button type="button" 
                         onclick="switchProjectView(1, 'fasad', this)" 
                         class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-slate-600 hover:bg-slate-100 transition-colors">
                   🏠 Fasad
-                </button>
-                <button type="button" 
-                        onclick="switchProjectView(1, 'interior', this)" 
-                        class="px-2.5 py-1 rounded-lg text-[10px] font-bold text-slate-600 hover:bg-slate-100 transition-colors">
-                  🛋️ Interior
                 </button>
               </div>
             </div>
@@ -484,14 +484,14 @@
             <!-- Image Viewport -->
             <div class="aspect-[4/3] bg-slate-100 overflow-hidden relative group">
               <img id="p1-img" 
-                   src="images/proyek1_denah_3d.jpg" 
-                   alt="Denah 3D Rumah Kompak 6x12" 
+                   src="images/proyek1_denah_2d.jpg" 
+                   alt="Denah 2D Rumah Kompak 6x12" 
                    class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
               
               <!-- Dynamic Floating Badge -->
               <div class="absolute bottom-3 left-3 pointer-events-none">
                 <span id="p1-badge" class="px-3 py-1 rounded-full bg-slate-950/85 text-white text-[10px] font-bold backdrop-blur-md shadow-md border border-white/20">
-                  📐 Denah 3D Tembus Pandang
+                  📐 Denah 2D Siap Cetak A4/A3
                 </span>
               </div>
             </div>
@@ -507,7 +507,14 @@
                 Penataan tata ruang paling laris di Indonesia. Dapur terbuka menyatu dengan ruang makan, 3 kamar tidur berjendela, dan void taman belakang anti-pengap.
               </p>
 
-              <div class="pt-2 border-t border-slate-100 space-y-1.5 text-xs text-slate-700">
+              <!-- Box Transparansi Paket Anti-Komplain -->
+              <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-slate-800 text-[11px] leading-relaxed">
+                <span class="font-extrabold text-amber-900 block mb-0.5">📦 Transparansi Dokumen:</span>
+                <span>• <strong>Paket Rp 199.000:</strong> Dapat Denah 2D Berukuran Siap Tukang (PDF/A4).</span><br>
+                <span class="text-amber-800 font-semibold">• Butuh 3D Fasad juga? Pilih <strong>Paket 03 (Rp 399.000)</strong></span>
+              </div>
+
+              <div class="pt-1 space-y-1.5 text-xs text-slate-700">
                 <div class="flex items-center gap-2">
                   <span class="text-amber-600 font-bold">✔</span>
                   <span>Ruang tamu lega tanpa sekat tembok mati.</span>
@@ -525,7 +532,7 @@
             <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20tertarik%20bikin%20denah%20mirip%20Model%20Kompak%206x12m%20(Rp%20199.000).%20Ini%20ukuran%20tanah%20saya:..." 
                target="_blank" 
                class="block w-full py-3 text-center rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs uppercase tracking-wider transition-all shadow-sm">
-              Pesan Model 6x12 Ini (Rp 199.000)
+              Pesan Denah 1 Lantai (Rp 199.000)
             </a>
           </div>
         </div>
@@ -540,9 +547,9 @@
               <!-- 3-in-1 Toggle Pills -->
               <div class="flex items-center gap-1 bg-white p-1 rounded-xl border border-slate-200">
                 <button type="button" 
-                        onclick="switchProjectView(2, 'denah_3d', this)" 
+                        onclick="switchProjectView(2, 'section_3d', this)" 
                         class="px-2.5 py-1 rounded-lg text-[10px] font-extrabold text-slate-950 bg-amber-400 shadow-sm transition-colors">
-                  📐 Denah 3D
+                  📐 Potongan 3D
                 </button>
                 <button type="button" 
                         onclick="switchProjectView(2, 'fasad', this)" 
@@ -560,14 +567,14 @@
             <!-- Image Viewport -->
             <div class="aspect-[4/3] bg-slate-100 overflow-hidden relative group">
               <img id="p2-img" 
-                   src="images/proyek2_denah_3d.jpg" 
-                   alt="Denah 3D Mezzanine 7x9" 
+                   src="images/proyek2_section_3d.jpg" 
+                   alt="3D Potongan Mezzanine 7x9" 
                    class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
               
               <!-- Dynamic Floating Badge -->
               <div class="absolute bottom-3 left-3 pointer-events-none">
                 <span id="p2-badge" class="px-3 py-1 rounded-full bg-slate-950/85 text-white text-[10px] font-bold backdrop-blur-md shadow-md border border-white/20">
-                  📐 Denah 3D Tembus Pandang
+                  📐 3D Potongan Ruang Plafon 5m
                 </span>
               </div>
             </div>
@@ -583,7 +590,14 @@
                 Trik ruang vertikal untuk menambah kamar tidur atau ruang santai di atas tanpa perlu biaya ngecor dak beton penuh. Plafon 5 meter super sejuk.
               </p>
 
-              <div class="pt-2 border-t border-slate-100 space-y-1.5 text-xs text-slate-700">
+              <!-- Box Transparansi Paket Anti-Komplain -->
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-[11px] leading-relaxed">
+                <span class="font-extrabold text-slate-900 block mb-0.5">📦 Transparansi Dokumen:</span>
+                <span>• <strong>Paket Rp 299.000:</strong> Denah 2D Lengkap Lantai 1 & Mezzanine Siap Tukang.</span><br>
+                <span class="text-amber-800 font-semibold">• Butuh 3D Fasad juga? Pilih <strong>Paket 03 (Rp 399.000)</strong></span>
+              </div>
+
+              <div class="pt-1 space-y-1.5 text-xs text-slate-700">
                 <div class="flex items-center gap-2">
                   <span class="text-amber-600 font-bold">✔</span>
                   <span>Tangga kayu modern hemat ruang.</span>
@@ -601,7 +615,7 @@
             <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20tertarik%20bikin%20denah%20model%20Mezzanine%20(Rp%20299.000).%20Ini%20ukuran%20tanah%20saya:..." 
                target="_blank" 
                class="block w-full py-3 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-sm">
-              Pesan Model Mezzanine (Rp 299.000)
+              Pesan Denah Mezzanine (Rp 299.000)
             </a>
           </div>
         </div>
@@ -643,7 +657,7 @@
               <!-- Dynamic Floating Badge -->
               <div class="absolute bottom-3 left-3 pointer-events-none">
                 <span id="p3-badge" class="px-3 py-1 rounded-full bg-slate-950/85 text-white text-[10px] font-bold backdrop-blur-md shadow-md border border-white/20">
-                  📐 Denah 3D Tembus Pandang
+                  📐 Denah 3D 2 Lantai Exploded
                 </span>
               </div>
             </div>
@@ -659,7 +673,14 @@
                 Solusi ruang maksimal untuk keluarga besar (3–4 kamar). Lantai 1 untuk area publik kumpul keluarga & dapur, lantai 2 untuk area privat dengan balkon santai.
               </p>
 
-              <div class="pt-2 border-t border-slate-100 space-y-1.5 text-xs text-slate-700">
+              <!-- Box Transparansi Paket Anti-Komplain -->
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-[11px] leading-relaxed">
+                <span class="font-extrabold text-slate-900 block mb-0.5">📦 Transparansi Dokumen:</span>
+                <span>• <strong>Paket Rp 299.000:</strong> Denah 2D Lengkap Lantai 1 & Lantai 2 Siap Tukang.</span><br>
+                <span class="text-amber-800 font-semibold">• Denah Lengkap + 3D Fasad? Pilih <strong>Paket 03 (Rp 399.000)</strong></span>
+              </div>
+
+              <div class="pt-1 space-y-1.5 text-xs text-slate-700">
                 <div class="flex items-center gap-2">
                   <span class="text-amber-600 font-bold">✔</span>
                   <span>Perencanaan tangga aman untuk anak & lansia.</span>
@@ -677,7 +698,7 @@
             <a href="https://wa.me/6281267447101?text=Halo%20Admin%20Desain%20Rumah%20Kilat,%20saya%20tertarik%20bikin%20denah%20Rumah%202%20Lantai%20(Rp%20299.000).%20Ini%20ukuran%20tanah%20saya:..." 
                target="_blank" 
                class="block w-full py-3 text-center rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider transition-all shadow-sm">
-              Pesan Model 2 Lantai (Rp 299.000)
+              Pesan Denah 2 Lantai (Rp 299.000)
             </a>
           </div>
         </div>
@@ -700,13 +721,13 @@
             Lihat Transformasi Denah Menjadi Rumah Nyata
           </h2>
           <p class="text-slate-600 text-sm leading-relaxed">
-            Denah 2D yang baik adalah fondasi dari rumah yang nyaman. Geser tombol slider untuk melihat bagaimana garis sekat ruangan kami diterjemahkan menjadi bangunan nyata yang estetik dan lapang.
+            Denah 2D yang baik adalah fondasi utama rumah yang kokoh dan nyaman. Geser garis tengah slider untuk melihat bagaimana <strong>garis denah 2D berdimensi meteran siap tukang</strong> bertransformasi menjadi <strong>wujud fisik bangunan 3D yang megah</strong>!
           </p>
 
           <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
-            <span class="text-xs font-bold text-amber-900 block">💡 Tips Membangun:</span>
+            <span class="text-xs font-bold text-amber-900 block">💡 Tips Penting Tukang Bangunan:</span>
             <p class="text-xs text-amber-800 leading-relaxed">
-              Jangan pernah biarkan tukang menebak-nebak ukuran sekat kamar di lapangan. Kesalahan sekat 50cm saja bisa membuat kamar terasa sumpek dan sirkulasi udara mati!
+              Jangan biarkan tukang menebak ukuran sekat kamar di lapangan. Dengan denah 2D berdimensi meteran presisi (Paket Rp 199.000), tukang langsung tahu posisi as dinding, tebal bata, dan peletakan pintu tanpa salah bongkar!
             </p>
           </div>
 
@@ -723,16 +744,16 @@
           <div class="clean-box rounded-3xl p-3 sm:p-4 bg-white border border-slate-200 shadow-xl">
             <div id="comparisonBox" class="comparison-container group cursor-ew-resize">
               
-              <!-- Layer Before: 2D / 3D Blueprint -->
+              <!-- Layer Before: 2D Blueprint Asli -->
               <div class="comparison-before">
                 <img id="comparisonImgBefore" 
-                     src="images/proyek1_denah_3d.jpg" 
-                     alt="Denah 3D Proyek 6x12" 
+                     src="images/proyek1_denah_2d.jpg" 
+                     alt="Denah 2D Blueprint Tukang 6x12" 
                      class="w-full h-full object-cover">
                 
                 <div class="absolute top-4 left-4 z-20 pointer-events-none">
                   <span class="px-3.5 py-1 rounded-full bg-slate-950/85 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
-                    📐 Denah 3D Presisi
+                    📐 Denah 2D Blueprint Tukang
                   </span>
                 </div>
               </div>
@@ -746,7 +767,7 @@
                 
                 <div class="absolute top-4 right-4 z-20 pointer-events-none">
                   <span class="px-3.5 py-1 rounded-full bg-amber-500 text-slate-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
-                    🏠 Fasad Nyata Jadi
+                    🏠 Wujud Fasad 3D Nyata
                   </span>
                 </div>
               </div>
@@ -761,7 +782,7 @@
             </div>
 
             <div class="pt-3 text-center text-xs text-slate-500 font-medium">
-              ← Geser garis tengah ke kiri / kanan untuk membandingkan →
+              ← Geser garis tengah: Denah 2D Blueprint vs Wujud Fasad 3D →
             </div>
           </div>
         </div>
@@ -1213,13 +1234,17 @@
       const badgeEl = document.getElementById(`p${projectId}-badge`);
       if (!imgEl) return;
 
-      // Update Image Source to Dedicated AI Image
+      // Update Image Source to Dedicated Image
       imgEl.src = `images/proyek${projectId}_${viewType}.jpg`;
 
       // Update Floating Badge Text
       if (badgeEl) {
-        if (viewType === 'denah_3d') {
-          badgeEl.innerText = '📐 Denah 3D Tembus Pandang';
+        if (viewType === 'denah_2d') {
+          badgeEl.innerText = '📐 Denah 2D Siap Cetak A4/A3';
+        } else if (viewType === 'section_3d') {
+          badgeEl.innerText = '📐 3D Potongan Ruang Plafon 5m';
+        } else if (viewType === 'denah_3d') {
+          badgeEl.innerText = projectId === 3 ? '📐 Denah 3D 2 Lantai Exploded' : '📐 Denah 3D Tembus Pandang';
         } else if (viewType === 'fasad') {
           badgeEl.innerText = '🏠 Fasad Tampak Depan';
         } else if (viewType === 'interior') {
